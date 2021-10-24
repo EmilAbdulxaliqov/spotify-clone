@@ -1,0 +1,51 @@
+.navbar {
+  font-family: Helvetica, sans-serif;
+  background: #000;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* .main-links > a :hover {
+  color: aqua;
+  color: #1bd760 !important;
+} */
+
+.nav-links a:hover {
+  color: #1bd760;
+}
+
+.main-links {
+  margin-right: 20px;
+}
+
+.main-links > a + a {
+  margin-left: 25px;
+}
+
+.main-links:nth-child(1)::after {
+  color: white;
+  content: "|";
+  margin-left: 20px;
+}
+
+.signup-links > a + a {
+  margin-left: 20px;
+}
+
+.navbar-logo > svg {
+  transform: translateX(-55%);
+  width: 132px;
+  fill: #fff;
+}
